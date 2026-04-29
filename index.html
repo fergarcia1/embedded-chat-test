@@ -9,7 +9,6 @@
 
   <script type="text/javascript">
   function initEmbeddedMessaging() {
-      console.log("INIT SE EJECUTA");
     try {
       embeddedservice_bootstrap.settings.language = 'es_MX';
 
@@ -21,14 +20,12 @@
           scrt2URL: 'https://prismampsfcd--devagentes.sandbox.my.salesforce-scrt.com'
         }
       );
-        console.log("INIT TERMINO");
     } catch (err) {
       console.error('Error loading Embedded Messaging: ', err);
     }
   }
 
   window.addEventListener("onEmbeddedMessagingReady", () => {
-  console.log("READY SE DISPARO");
 
   embeddedservice_bootstrap.prechatAPI.setHiddenPrechatFields({
     "CUITCUIL": "20301234567",
