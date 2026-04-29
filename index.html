@@ -26,15 +26,16 @@
     }
   }
 
-  // 👇 ESTO ES LO IMPORTANTE
   window.addEventListener("onEmbeddedMessagingReady", () => {
-    embeddedservice_bootstrap.prechatAPI.setHiddenPrechatFields({
-      "CUITCUIL": "20301234567",
-      "EMAIL": "test@mail.com",
-      "PERMISOS": ["A", "B"],
-      "ROL": "ADMIN"
-    });
+  console.log("READY SE DISPARO");
+
+  embeddedservice_bootstrap.prechatAPI.setHiddenPrechatFields({
+    "CUITCUIL": "20301234567",
+    "EMAIL": "test@mail.com",
+    "PERMISOS": ["A", "B"],
+    "ROL": "ADMIN"
   });
+});
 </script>
 
 <script
